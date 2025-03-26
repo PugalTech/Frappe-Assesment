@@ -1,0 +1,65 @@
+Traceback (most recent call last):
+  File "env/lib/python3.10/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "env/lib/python3.10/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "env/lib/python3.10/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "env/lib/python3.10/site-packages/tenacity/__init__.py", line 407, in __call__
+    result = fn(*args, **kwargs)
+  File "apps/frappe/frappe/utils/background_jobs.py", line 388, in get_redis_conn
+    _redis_queue_conn = RedisQueue.get_connection()
+  File "apps/frappe/frappe/utils/redis_queue.py", line 39, in get_connection
+    conn.ping()
+  File "env/lib/python3.10/site-packages/redis/client.py", line 1378, in ping
+    return self.execute_command('PING')
+  File "env/lib/python3.10/site-packages/redis/client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "env/lib/python3.10/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "env/lib/python3.10/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:11000. Connection refused.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "apps/frappe/frappe/desk/page/setup_wizard/setup_wizard.py", line 80, in process_setup_stages
+    task.get("fn")(task.get("args"))
+  File "apps/frappe/frappe/desk/page/setup_wizard/setup_wizard.py", line 107, in update_global_settings
+    update_user_name(args)
+  File "apps/frappe/frappe/desk/page/setup_wizard/setup_wizard.py", line 204, in update_user_name
+    doc.insert()
+  File "apps/frappe/frappe/model/document.py", line 292, in insert
+    self.run_post_save_methods()
+  File "apps/frappe/frappe/model/document.py", line 1098, in run_post_save_methods
+    self.run_method("on_update")
+  File "apps/frappe/frappe/model/document.py", line 931, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "apps/frappe/frappe/model/document.py", line 1283, in composer
+    return composed(self, method, *args, **kwargs)
+  File "apps/frappe/frappe/model/document.py", line 1265, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "apps/frappe/frappe/model/document.py", line 928, in fn
+    return method_object(*args, **kwargs)
+  File "apps/frappe/frappe/core/doctype/user/user.py", line 141, in on_update
+    frappe.enqueue(
+  File "apps/frappe/frappe/__init__.py", line 2171, in enqueue
+    return frappe.utils.background_jobs.enqueue(*args, **kwargs)
+  File "apps/frappe/frappe/utils/background_jobs.py", line 101, in enqueue
+    q = get_queue(queue, is_async=is_async)
+  File "apps/frappe/frappe/utils/background_jobs.py", line 347, in get_queue
+    return Queue(generate_qname(qtype), connection=get_redis_conn(), is_async=is_async)
+  File "env/lib/python3.10/site-packages/tenacity/__init__.py", line 324, in wrapped_f
+    return self(f, *args, **kw)
+  File "env/lib/python3.10/site-packages/tenacity/__init__.py", line 404, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "env/lib/python3.10/site-packages/tenacity/__init__.py", line 361, in iter
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x7fe2ddb34160 state=finished raised ConnectionError>]
+{"language": "English", "enable_telemetry": 1, "country": "India", "timezone": "Indian/Antananarivo", "currency": "INR", "full_name": "Admin", "email": "admin1@gmail.com", "password": "admin@1234", "name": "admin1@gmail.com"}

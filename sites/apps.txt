@@ -1,0 +1,3 @@
+frappe
+promotor
+erpnext

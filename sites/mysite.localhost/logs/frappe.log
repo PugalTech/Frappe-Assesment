@@ -703,3 +703,9 @@ Form Dict: {'report_name': 'Reorder Items', 'filters': '', 'ignore_prepared_repo
 2025-03-21 11:36:24,826 ERROR frappe New Exception collected with id: 2025-03-21 11:36:24.344714-127.0.0.1-c02
 Site: mysite.localhost
 Form Dict: {'report_name': 'Reorder Items', 'filters': '', 'ignore_prepared_report': '1', 'cmd': 'frappe.desk.query_report.run'}
+2025-06-18 05:54:29,439 ERROR frappe New Exception collected with id: 2025-06-18 05:54:28.837609-127.0.0.1-c99
+Site: mysite.localhost
+Form Dict: {'report_name': 'Purchase Order Analysis', 'filters': '{"group_by_po":0,"company":"Magizh Solution","from_date":"2025-05-18","to_date":"2025-06-18"}', 'ignore_prepared_report': '1', 'cmd': 'frappe.desk.query_report.run'}
+2025-06-18 06:41:24,718 ERROR frappe New Exception collected with id: 2025-06-18 06:41:24.638335-127.0.0.1-8de
+Site: mysite.localhost
+Form Dict: {'doctype': 'List View Settings', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}

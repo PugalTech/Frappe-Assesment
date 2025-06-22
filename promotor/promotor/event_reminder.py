@@ -1,42 +1,57 @@
 import frappe
-from frappe.utils import now_datetime, add_to_date, get_datetime
+from frappe.utils import now_datetime, add_to_date
 
 def send_event_reminders():
-    print(">>> send_event_reminders function started")
-    now = now_datetime()
-    print("Current time:", now)
+    current_time = now_datetime()
 
-    time_frames = {
-        "1_hour": add_to_date(now, hours=1),
-        "1_day": add_to_date(now, days=1),
-        "1_week": add_to_date(now, weeks=1),
+    time_windows = {
+        '1 hour': add_to_date(current_time, hours=1),
+        '1 day': add_to_date(current_time, days=1),
+        '1 week': add_to_date(current_time, weeks=1)
     }
 
-    for label, reminder_time in time_frames.items():
+    for label, notify_time in time_windows.items():
         events = frappe.get_all("Event",
             filters={
-                "custom_enable_reminders": 1,
-                "starts_on": ["between", [reminder_time, add_to_date(reminder_time, minutes=1)]],
-                "status": "Open"
+                "starts_on": ("between", [notify_time, add_to_date(notify_time, minutes=1)]),
+                "custom_enable_reminders": 1
             },
-            fields=["name", "subject", "starts_on", "owner"]
+            fields=["name", "subject", "owner", "starts_on"]
         )
 
+        print(f"[{label}] Total matching events: {len(events)}")
         for event in events:
-            user = frappe.get_doc("User", event.owner)
-            subject = f"[Reminder: {label.replace('_', ' ')}] Upcoming Event: {event.subject}"
-            message = f"Your event <b>{event.subject}</b> is scheduled on {event.starts_on}. (Reminder set for {label.replace('_', ' ')})"
+            print("Sending notification for:", event)
+            send_notification(event, label)
 
-            # Send Email Notification
+def send_notification(event, label):
+    user = event.get("owner")
+    subject = f"Reminder: {event.get('subject')} - {label} remaining"
+    message = f"Your event '{event.get('subject')}' is scheduled to start at {event.get('starts_on')}.\nThis is a reminder {label} before the event."
+
+    try:
+        # Send Email
+        user_email = frappe.db.get_value("User", user, "email")
+        if user_email:
             frappe.sendmail(
-                recipients=[user.email],
+                recipients=[user_email],
                 subject=subject,
                 message=message
             )
 
-            # Send In-App Notification
-            frappe.publish_realtime(
-                event='eval_js',
-                message=f'frappe.show_alert("Reminder: {event.subject} in {label.replace("_", " ")}")',
-                user=user.name
-            )
+        # Create Notification Log (Frappe in-app notification)
+        doc = frappe.new_doc("Notification Log")
+        doc.subject = subject
+        doc.email_content = message
+        doc.for_user = user
+        doc.type = "Alert"
+        doc.document_type = "Event"
+        doc.document_name = event.get("name")
+        doc.seen = 0
+        doc.insert(ignore_permissions=True)
+
+        frappe.db.commit()
+        print(f"Notification sent to: {user} ({user_email})")
+
+    except Exception as e:
+        frappe.log_error(message=str(e), title="Send Notification Failed")

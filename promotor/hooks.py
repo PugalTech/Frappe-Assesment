@@ -5,6 +5,16 @@ app_description = "none"
 app_email = "promotor@gmail.com"
 app_license = "MIT"
 
+
+scheduler_events = {
+    "cron": {
+        "*/5 * * * *": [
+            "promotor.promotor.event_reminder.send_event_reminders"
+        ]
+    }
+}
+
+
 # Includes in <head>
 # ------------------
 

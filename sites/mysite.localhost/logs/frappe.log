@@ -709,3 +709,122 @@ Form Dict: {'report_name': 'Purchase Order Analysis', 'filters': '{"group_by_po"
 2025-06-18 06:41:24,718 ERROR frappe New Exception collected with id: 2025-06-18 06:41:24.638335-127.0.0.1-8de
 Site: mysite.localhost
 Form Dict: {'doctype': 'List View Settings', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-06-19 08:30:17,641 ERROR frappe New Exception collected with id: 2025-06-19 08:30:15.450633-127.0.0.1-9a9
+Site: mysite.localhost
+Form Dict: {'report_name': 'Purchase Order Analysis', 'filters': '{"group_by_po":0,"company":"Magizh Solution","from_date":"2025-05-19","to_date":"2025-06-19"}', 'ignore_prepared_report': '1', 'cmd': 'frappe.desk.query_report.run'}
+2025-06-19 08:32:39,444 ERROR frappe New Exception collected with id: 2025-06-19 08:32:39.247139-127.0.0.1-e0b
+Site: mysite.localhost
+Form Dict: {'report_name': 'Purchase Order Analysis', 'filters': '{"group_by_po":0,"company":"Magizh Solution","from_date":"2025-05-19","to_date":"2025-06-19"}', 'ignore_prepared_report': '1', 'cmd': 'frappe.desk.query_report.run'}
+2025-06-19 08:52:36,283 ERROR frappe New Exception collected with id: 2025-06-19 08:52:36.232012-127.0.0.1-159
+Site: mysite.localhost
+Form Dict: {'doc': '{"name":"Sales Invoice Report","owner":"Administrator","creation":"2025-06-19 14:18:17.580936","modified":"2025-06-19 14:18:17.580936","modified_by":"Administrator","docstatus":0,"idx":0,"report_name":"Sales Invoice Report","ref_doctype":"Sales Invoice","is_standard":"Yes","module":"Accounts","report_type":"Report Builder","add_total_row":0,"disabled":0,"disable_prepared_report":0,"prepared_report":0,"json":{"filters":[],"fields":[["name","Sales Invoice"],["customer","Sales Invoice"],["grand_total","Sales Invoice"],["status","Sales Invoice"],["base_grand_total","Sales Invoice"],["outstanding_amount","Sales Invoice"],["currency","Sales Invoice"],["party_account_currency","Sales Invoice"]],"order_by":"`tabSales Invoice`.`modified` desc","add_totals_row":0,"page_length":20,"column_widths":{"name":120,"customer":120,"grand_total":120,"status":120,"base_grand_total":120,"outstanding_amount":120,"currency":120,"party_account_currency":120},"group_by":null},"doctype":"Report","roles":[{"name":"c51ga40naq","owner":"Administrator","creation":"2025-06-19 14:18:17.622481","modified":"2025-06-19 14:18:17.622481","modified_by":"Administrator","docstatus":0,"idx":1,"role":"Accounts Manager","parent":"Sales Invoice Report","parentfield":"roles","parenttype":"Report","doctype":"Has Role"},{"name":"c51gus5uuq","owner":"Administrator","creation":"2025-06-19 14:18:17.623202","modified":"2025-06-19 14:18:17.623202","modified_by":"Administrator","docstatus":0,"idx":2,"role":"Accounts User","parent":"Sales Invoice Report","parentfield":"roles","parenttype":"Report","doctype":"Has Role"}],"columns":[],"filters":[{"docstatus":0,"doctype":"Report Filter","name":"new-report-filter-oueipmiusp","__islocal":1,"__unsaved":1,"owner":"Administrator","fieldtype":"Data","mandatory":0,"wildcard_filter":0,"parent":"Sales Invoice Report","parentfield":"filters","parenttype":"Report","idx":1,"__unedited":false,"label":"Territory","fieldname":"territory"},{"docstatus":0,"doctype":"Report Filter","name":"new-report-filter-ukfnlocpjb","__islocal":1,"__unsaved":1,"owner":"Administrator","fieldtype":"Date","mandatory":0,"wildcard_filter":0,"parent":"Sales Invoice Report","parentfield":"filters","parenttype":"Report","idx":2,"__unedited":false,"label":"Date","fieldname":"posting_date"}],"__last_sync_on":"2025-06-19T08:48:19.092Z","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-06-19 08:53:02,019 ERROR frappe New Exception collected with id: 2025-06-19 08:53:01.988370-127.0.0.1-c49
+Site: mysite.localhost
+Form Dict: {'doc': '{"name":"Sales Invoice Report","owner":"Administrator","creation":"2025-06-19 14:18:17.580936","modified":"2025-06-19 14:18:17.580936","modified_by":"Administrator","docstatus":0,"idx":0,"report_name":"Sales Invoice Report","ref_doctype":"Sales Invoice","is_standard":"Yes","module":"Accounts","report_type":"Report Builder","add_total_row":0,"disabled":0,"disable_prepared_report":0,"prepared_report":0,"json":{"filters":[],"fields":[["name","Sales Invoice"],["customer","Sales Invoice"],["grand_total","Sales Invoice"],["status","Sales Invoice"],["base_grand_total","Sales Invoice"],["outstanding_amount","Sales Invoice"],["currency","Sales Invoice"],["party_account_currency","Sales Invoice"]],"order_by":"`tabSales Invoice`.`modified` desc","add_totals_row":0,"page_length":20,"column_widths":{"name":120,"customer":120,"grand_total":120,"status":120,"base_grand_total":120,"outstanding_amount":120,"currency":120,"party_account_currency":120},"group_by":null},"doctype":"Report","roles":[{"name":"c51ga40naq","owner":"Administrator","creation":"2025-06-19 14:18:17.622481","modified":"2025-06-19 14:18:17.622481","modified_by":"Administrator","docstatus":0,"idx":1,"role":"Accounts Manager","parent":"Sales Invoice Report","parentfield":"roles","parenttype":"Report","doctype":"Has Role"},{"name":"c51gus5uuq","owner":"Administrator","creation":"2025-06-19 14:18:17.623202","modified":"2025-06-19 14:18:17.623202","modified_by":"Administrator","docstatus":0,"idx":2,"role":"Accounts User","parent":"Sales Invoice Report","parentfield":"roles","parenttype":"Report","doctype":"Has Role"}],"columns":[],"filters":[{"docstatus":0,"doctype":"Report Filter","name":"new-report-filter-oueipmiusp","__islocal":1,"__unsaved":1,"owner":"Administrator","fieldtype":"Data","mandatory":0,"wildcard_filter":0,"parent":"Sales Invoice Report","parentfield":"filters","parenttype":"Report","idx":1,"__unedited":false,"label":"Territory","fieldname":"territory"},{"docstatus":0,"doctype":"Report Filter","name":"new-report-filter-ukfnlocpjb","__islocal":1,"__unsaved":1,"owner":"Administrator","fieldtype":"Date","mandatory":0,"wildcard_filter":0,"parent":"Sales Invoice Report","parentfield":"filters","parenttype":"Report","idx":2,"__unedited":false,"label":"Date","fieldname":"posting_date"}],"__last_sync_on":"2025-06-19T08:48:19.092Z","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-06-19 08:56:16,528 ERROR frappe New Exception collected with id: 2025-06-19 08:56:16.509422-127.0.0.1-23d
+Site: mysite.localhost
+Form Dict: {'doc': '{"name":"Sales Invoice Report","owner":"Administrator","creation":"2025-06-19 14:18:17.580936","modified":"2025-06-19 14:18:17.580936","modified_by":"Administrator","docstatus":0,"idx":0,"report_name":"Sales Invoice Report","ref_doctype":"Sales Invoice","is_standard":"Yes","module":"Accounts","report_type":"Report Builder","add_total_row":0,"disabled":0,"disable_prepared_report":0,"prepared_report":0,"json":{"filters":[],"fields":[["name","Sales Invoice"],["customer","Sales Invoice"],["grand_total","Sales Invoice"],["status","Sales Invoice"],["base_grand_total","Sales Invoice"],["outstanding_amount","Sales Invoice"],["currency","Sales Invoice"],["party_account_currency","Sales Invoice"]],"order_by":"`tabSales Invoice`.`modified` desc","add_totals_row":0,"page_length":20,"column_widths":{"name":120,"customer":120,"grand_total":120,"status":120,"base_grand_total":120,"outstanding_amount":120,"currency":120,"party_account_currency":120},"group_by":null},"doctype":"Report","roles":[{"name":"c51ga40naq","owner":"Administrator","creation":"2025-06-19 14:18:17.622481","modified":"2025-06-19 14:18:17.622481","modified_by":"Administrator","docstatus":0,"idx":1,"role":"Accounts Manager","parent":"Sales Invoice Report","parentfield":"roles","parenttype":"Report","doctype":"Has Role"},{"name":"c51gus5uuq","owner":"Administrator","creation":"2025-06-19 14:18:17.623202","modified":"2025-06-19 14:18:17.623202","modified_by":"Administrator","docstatus":0,"idx":2,"role":"Accounts User","parent":"Sales Invoice Report","parentfield":"roles","parenttype":"Report","doctype":"Has Role"}],"columns":[],"filters":[],"__last_sync_on":"2025-06-19T08:48:19.092Z","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-06-20 07:25:50,370 ERROR frappe New Exception collected with id: 2025-06-20 07:25:49.023469-127.0.0.1-906
+Site: mysite.localhost
+Form Dict: {'report_name': 'Purchase Order Analysis', 'filters': '{"group_by_po":0,"company":"Magizh Solution","from_date":"2025-05-20","to_date":"2025-06-20"}', 'ignore_prepared_report': '1', 'cmd': 'frappe.desk.query_report.run'}
+2025-06-20 07:33:29,341 ERROR frappe New Exception collected with id: 2025-06-20 07:33:29.202889-127.0.0.1-ad8
+Site: mysite.localhost
+Form Dict: {'report_name': 'Sales Report', 'filters': '{"from_date":"2025-05-20","to_date":"2025-06-20"}', 'ignore_prepared_report': 'false', 'are_default_filters': 'false', 'cmd': 'frappe.desk.query_report.run'}
+2025-06-20 07:33:29,492 ERROR frappe New Exception collected with id: 2025-06-20 07:33:29.442157-127.0.0.1-72e
+Site: mysite.localhost
+Form Dict: {'report_name': 'Sales Report', 'filters': '{"from_date":"2025-05-20","to_date":"2025-06-20"}', 'ignore_prepared_report': 'false', 'are_default_filters': 'false', 'cmd': 'frappe.desk.query_report.run'}
+2025-06-20 07:34:06,331 ERROR frappe New Exception collected with id: 2025-06-20 07:34:06.327258-127.0.0.1-ad8
+Site: mysite.localhost
+Form Dict: {'report_name': 'Sales Report', 'filters': '{"from_date":"2025-05-20","to_date":"2025-06-20"}', 'ignore_prepared_report': 'false', 'are_default_filters': 'false', 'cmd': 'frappe.desk.query_report.run'}
+2025-06-20 07:34:06,338 ERROR frappe New Exception collected with id: 2025-06-20 07:34:06.107722-127.0.0.1-7db
+Site: mysite.localhost
+Form Dict: {'report_name': 'Sales Report', 'filters': '{"from_date":"2025-05-20","to_date":"2025-06-20"}', 'ignore_prepared_report': 'false', 'are_default_filters': 'false', 'cmd': 'frappe.desk.query_report.run'}
+2025-06-21 07:57:42,835 ERROR frappe New Exception collected with id: 2025-06-21 07:57:42.614928-127.0.0.1-525
+Site: mysite.localhost
+Form Dict: {'report_name': 'Purchase Order Analysis', 'filters': '{"group_by_po":0,"company":"Magizh Solution","from_date":"2025-05-21","to_date":"2025-06-21"}', 'ignore_prepared_report': '1', 'cmd': 'frappe.desk.query_report.run'}
+2025-06-21 14:36:59,844 ERROR frappe New Exception collected with id: 2025-06-21 14:36:59.002492-127.0.0.1-33c
+Site: mysite.localhost
+Form Dict: {'report_name': 'Purchase Order Analysis', 'filters': '{"group_by_po":0,"company":"Magizh Solution","from_date":"2025-05-21","to_date":"2025-06-21"}', 'ignore_prepared_report': '1', 'cmd': 'frappe.desk.query_report.run'}
+2025-06-21 15:25:40,737 ERROR frappe Could not take error snapshot: characters_written
+Site: mysite.localhost
+Form Dict: {'city': 'Tiruppur', 'cmd': 'promotor.promotor.api_integration.fetch_weather_data'}
+Traceback (most recent call last):
+  File "/home/frapee-pugal/my-frappe-site/env/lib/python3.10/site-packages/urllib3/connectionpool.py", line 716, in urlopen
+    httplib_response = self._make_request(
+  File "/home/frapee-pugal/my-frappe-site/env/lib/python3.10/site-packages/urllib3/connectionpool.py", line 468, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/frapee-pugal/my-frappe-site/env/lib/python3.10/site-packages/urllib3/connectionpool.py", line 463, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.10/http/client.py", line 1375, in getresponse
+    response.begin()
+  File "/usr/lib/python3.10/http/client.py", line 318, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.10/http/client.py", line 287, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frapee-pugal/my-frappe-site/env/lib/python3.10/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/home/frapee-pugal/my-frappe-site/env/lib/python3.10/site-packages/urllib3/connectionpool.py", line 802, in urlopen
+    retries = retries.increment(
+  File "/home/frapee-pugal/my-frappe-site/env/lib/python3.10/site-packages/urllib3/util/retry.py", line 552, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/frapee-pugal/my-frappe-site/env/lib/python3.10/site-packages/urllib3/packages/six.py", line 769, in reraise
+    raise value.with_traceback(tb)
+  File "/home/frapee-pugal/my-frappe-site/env/lib/python3.10/site-packages/urllib3/connectionpool.py", line 716, in urlopen
+    httplib_response = self._make_request(
+  File "/home/frapee-pugal/my-frappe-site/env/lib/python3.10/site-packages/urllib3/connectionpool.py", line 468, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/frapee-pugal/my-frappe-site/env/lib/python3.10/site-packages/urllib3/connectionpool.py", line 463, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.10/http/client.py", line 1375, in getresponse
+    response.begin()
+  File "/usr/lib/python3.10/http/client.py", line 318, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.10/http/client.py", line 287, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frapee-pugal/my-frappe-site/apps/frappe/frappe/app.py", line 97, in application
+    response = frappe.api.handle()
+  File "/home/frapee-pugal/my-frappe-site/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/home/frapee-pugal/my-frappe-site/apps/frappe/frappe/handler.py", line 48, in handle
+    data = execute_cmd(cmd)
+  File "/home/frapee-pugal/my-frappe-site/apps/frappe/frappe/handler.py", line 86, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frapee-pugal/my-frappe-site/apps/frappe/frappe/__init__.py", line 1619, in call
+    return fn(*args, **newargs)
+  File "/home/frapee-pugal/my-frappe-site/apps/promotor/promotor/promotor/api_integration.py", line 9, in fetch_weather_data
+    response = requests.get(url)
+  File "/home/frapee-pugal/my-frappe-site/env/lib/python3.10/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/home/frapee-pugal/my-frappe-site/env/lib/python3.10/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/frapee-pugal/my-frappe-site/env/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/frapee-pugal/my-frappe-site/env/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/frapee-pugal/my-frappe-site/env/lib/python3.10/site-packages/requests/adapters.py", line 682, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frapee-pugal/my-frappe-site/apps/frappe/frappe/utils/error.py", line 60, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/frapee-pugal/my-frappe-site/apps/frappe/frappe/utils/error.py", line 153, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2025-06-22 04:32:31,615 ERROR frappe New Exception collected with id: 2025-06-22 04:32:30.972831-127.0.0.1-775
+Site: mysite.localhost
+Form Dict: {'report_name': 'Purchase Order Analysis', 'filters': '{"group_by_po":0,"company":"Magizh Solution","from_date":"2025-05-22","to_date":"2025-06-22"}', 'ignore_prepared_report': '1', 'cmd': 'frappe.desk.query_report.run'}

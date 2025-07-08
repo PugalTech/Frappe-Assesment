@@ -828,3 +828,60 @@ AttributeError: characters_written
 2025-06-22 04:32:31,615 ERROR frappe New Exception collected with id: 2025-06-22 04:32:30.972831-127.0.0.1-775
 Site: mysite.localhost
 Form Dict: {'report_name': 'Purchase Order Analysis', 'filters': '{"group_by_po":0,"company":"Magizh Solution","from_date":"2025-05-22","to_date":"2025-06-22"}', 'ignore_prepared_report': '1', 'cmd': 'frappe.desk.query_report.run'}
+2025-06-22 07:16:22,489 ERROR frappe New Exception collected with id: 2025-06-22 07:16:22.351704-127.0.0.1-c57
+Site: mysite.localhost
+Form Dict: {'method': 'promotor.promotor.bulk_convertion.make_bulk_convertion', 'source_name': 'CRM-LEAD-2025-00001', 'args': '', 'selected_children': '{}', 'cmd': 'frappe.model.mapper.make_mapped_doc'}
+2025-06-22 09:41:30,229 ERROR frappe New Exception collected with id: 2025-06-22 09:41:29.898574-127.0.0.1-970
+Site: mysite.localhost
+Form Dict: {'report_name': 'Sales Report', 'filters': '{"from_date":"2025-05-22","to_date":"2025-06-22"}', 'ignore_prepared_report': 'false', 'are_default_filters': 'false', 'cmd': 'frappe.desk.query_report.run'}
+2025-06-22 09:41:30,280 ERROR frappe New Exception collected with id: 2025-06-22 09:41:29.907339-127.0.0.1-855
+Site: mysite.localhost
+Form Dict: {'report_name': 'Sales Report', 'filters': '{"from_date":"2025-05-22","to_date":"2025-06-22"}', 'ignore_prepared_report': 'false', 'are_default_filters': 'false', 'cmd': 'frappe.desk.query_report.run'}
+2025-06-22 09:41:50,927 ERROR frappe New Exception collected with id: 2025-06-22 09:41:50.079112-127.0.0.1-64e
+Site: mysite.localhost
+Form Dict: {'report_name': 'Sales Report', 'filters': '{"from_date":"2025-05-22","to_date":"2025-06-22"}', 'ignore_prepared_report': 'false', 'are_default_filters': 'false', 'cmd': 'frappe.desk.query_report.run'}
+2025-06-22 09:41:50,939 ERROR frappe New Exception collected with id: 2025-06-22 09:41:50.548476-127.0.0.1-e3f
+Site: mysite.localhost
+Form Dict: {'report_name': 'Sales Report', 'filters': '{"from_date":"2025-05-22","to_date":"2025-06-22"}', 'ignore_prepared_report': 'false', 'are_default_filters': 'false', 'cmd': 'frappe.desk.query_report.run'}
+2025-06-22 09:42:37,255 ERROR frappe New Exception collected with id: 2025-06-22 09:42:37.041632-127.0.0.1-a24
+Site: mysite.localhost
+Form Dict: {'report_name': 'Sales Report', 'filters': '{"from_date":"2025-05-22","to_date":"2025-06-22"}', 'ignore_prepared_report': 'false', 'are_default_filters': 'false', 'cmd': 'frappe.desk.query_report.run'}
+2025-06-22 09:42:37,377 ERROR frappe New Exception collected with id: 2025-06-22 09:42:37.368051-127.0.0.1-32b
+Site: mysite.localhost
+Form Dict: {'report_name': 'Sales Report', 'filters': '{"from_date":"2025-05-22","to_date":"2025-06-22"}', 'ignore_prepared_report': 'false', 'are_default_filters': 'false', 'cmd': 'frappe.desk.query_report.run'}
+2025-06-22 09:44:20,695 ERROR frappe New Exception collected with id: 2025-06-22 09:44:20.043602-127.0.0.1-205
+Site: mysite.localhost
+Form Dict: {'report_name': 'Sales Report', 'filters': '{"from_date":"2025-05-22","to_date":"2025-06-22"}', 'ignore_prepared_report': 'false', 'are_default_filters': 'false', 'cmd': 'frappe.desk.query_report.run'}
+2025-06-22 09:44:20,712 ERROR frappe New Exception collected with id: 2025-06-22 09:44:20.041681-127.0.0.1-bfb
+Site: mysite.localhost
+Form Dict: {'report_name': 'Sales Report', 'filters': '{"from_date":"2025-05-22","to_date":"2025-06-22"}', 'ignore_prepared_report': 'false', 'are_default_filters': 'false', 'cmd': 'frappe.desk.query_report.run'}
+2025-06-22 09:44:48,091 ERROR frappe New Exception collected with id: 2025-06-22 09:44:47.815277-127.0.0.1-198
+Site: mysite.localhost
+Form Dict: {'report_name': 'Sales Report', 'filters': '{"from_date":"2025-05-22","to_date":"2025-06-22"}', 'ignore_prepared_report': 'false', 'are_default_filters': 'false', 'cmd': 'frappe.desk.query_report.run'}
+2025-06-22 09:44:48,136 ERROR frappe New Exception collected with id: 2025-06-22 09:44:47.505897-127.0.0.1-755
+Site: mysite.localhost
+Form Dict: {'report_name': 'Sales Report', 'filters': '{"from_date":"2025-05-22","to_date":"2025-06-22"}', 'ignore_prepared_report': 'false', 'are_default_filters': 'false', 'cmd': 'frappe.desk.query_report.run'}
+2025-06-23 08:04:06,402 ERROR frappe New Exception collected with id: 2025-06-23 08:04:06.131073-127.0.0.1-3f6
+Site: mysite.localhost
+Form Dict: {'report_name': 'Purchase Order Analysis', 'filters': '{"group_by_po":0,"company":"Magizh Solution","from_date":"2025-05-23","to_date":"2025-06-23"}', 'ignore_prepared_report': '1', 'cmd': 'frappe.desk.query_report.run'}
+2025-06-23 08:09:51,981 ERROR frappe New Exception collected with id: 2025-06-23 08:09:51.946307-127.0.0.1-fe9
+Site: mysite.localhost
+Form Dict: {'report_name': 'Purchase Order Analysis', 'filters': '{"group_by_po":0,"company":"Magizh Solution","from_date":"2025-05-23","to_date":"2025-06-23"}', 'ignore_prepared_report': '1', 'cmd': 'frappe.desk.query_report.run'}
+2025-06-26 04:40:55,703 ERROR frappe New Exception collected with id: 2025-06-26 04:40:55.194413-127.0.0.1-0f5
+Site: mysite.localhost
+Form Dict: {'report_name': 'Purchase Order Analysis', 'filters': '{"group_by_po":0,"company":"Magizh Solution","from_date":"2025-05-26","to_date":"2025-06-26"}', 'ignore_prepared_report': '1', 'cmd': 'frappe.desk.query_report.run'}
+2025-06-26 05:12:37,523 ERROR frappe New Exception collected with id: 2025-06-26 05:12:37.343296-127.0.0.1-a82
+Site: mysite.localhost
+Form Dict: {'doc': '{"name":"Lead","owner":"Administrator","creation":"2025-06-21 15:58:46.788691","modified":"2025-06-21 16:25:32.798561","modified_by":"Administrator","docstatus":0,"idx":0,"dt":"Lead","view":"Form","enabled":1,"script":"frappe.ui.form.on(\'Lead\', {\\n\\n\\tvalidate:function(frm){\\n\\t    var phone = frm.doc.phone;\\n\\t    if (phone){\\n\\t        if (phone.length > 15 ){\\n\\t            frappe.msgprint(\\"Phone number should not be more than 15 characters\\");\\n\\t            frappe.validated = false;\\n\\t        } \\n\\t        else if (!phone.startsWith(\'+91\')){\\n\\t            frappe.msgprint(\\"Phone number should start with a country code (e.g., +91)s\\");\\n\\t            frappe.validated = false;\\n\\t        }\\n\\t    }\\n\\t    },\\n\\t    refresh:function(){\\n\\t        frm.add_custom_button(__(\'Send Email\'), function() {\\n                frappe.call({\\n\\t\\t\\t\\t\\tmethod:\\"send_email\\",\\n\\t\\t\\t\\t\\tdoc: frm.doc,\\n\\t\\t\\t\\t\\tcallback:function(r){\\n\\t\\t\\t\\t\\t\\tif (r.message){\\n\\t\\t\\t\\t\\t\\t\\tconsole.log(r.message.content);\\n\\t\\t\\t\\t\\t\\t}\\n\\t\\t\\t\\t\\t}\\n\\t\\t\\t\\t})\\n            });\\n\\t    }\\n\\t\\n})","doctype":"Client Script","__last_sync_on":"2025-06-26T05:09:18.642Z","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-06-26 05:12:45,415 ERROR frappe New Exception collected with id: 2025-06-26 05:12:45.356916-127.0.0.1-c95
+Site: mysite.localhost
+Form Dict: {'doc': '{"name":"Lead","owner":"Administrator","creation":"2025-06-21 15:58:46.788691","modified":"2025-06-21 16:25:32.798561","modified_by":"Administrator","docstatus":0,"idx":0,"dt":"Lead","view":"Form","enabled":1,"script":"frappe.ui.form.on(\'Lead\', {\\n\\n\\tvalidate:function(frm){\\n\\t    var phone = frm.doc.phone;\\n\\t    if (phone){\\n\\t        if (phone.length > 15 ){\\n\\t            frappe.msgprint(\\"Phone number should not be more than 15 characters\\");\\n\\t            frappe.validated = false;\\n\\t        } \\n\\t        else if (!phone.startsWith(\'+91\')){\\n\\t            frappe.msgprint(\\"Phone number should start with a country code (e.g., +91)s\\");\\n\\t            frappe.validated = false;\\n\\t        }\\n\\t    }\\n\\t    },\\n\\t    refresh:function(){\\n\\t        frm.add_custom_button(__(\'Send Email\'), function() {\\n                frappe.call({\\n\\t\\t\\t\\t\\tmethod:\\"send_email\\",\\n\\t\\t\\t\\t\\tdoc: frm.doc,\\n\\t\\t\\t\\t\\tcallback:function(r){\\n\\t\\t\\t\\t\\t\\tif (r.message){\\n\\t\\t\\t\\t\\t\\t\\tconsole.log(r.message.content);\\n\\t\\t\\t\\t\\t\\t}\\n\\t\\t\\t\\t\\t}\\n\\t\\t\\t\\t})\\n            });\\n\\t    }\\n\\t\\n})","doctype":"Client Script","__last_sync_on":"2025-06-26T05:09:18.642Z","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-06-26 05:14:46,956 ERROR frappe New Exception collected with id: 2025-06-26 05:14:46.794378-127.0.0.1-fad
+Site: mysite.localhost
+Form Dict: {'doctype': 'Client Script', 'name': 'Lead', 'cmd': 'frappe.desk.form.load.getdoc'}
+2025-06-26 05:15:33,978 ERROR frappe New Exception collected with id: 2025-06-26 05:15:33.848887-127.0.0.1-e12
+Site: mysite.localhost
+Form Dict: {'doctype': 'Client Script', 'name': 'Lead', 'cmd': 'frappe.desk.form.load.getdoc'}
+2025-06-26 05:16:07,794 ERROR frappe New Exception collected with id: 2025-06-26 05:16:07.366178-127.0.0.1-f0b
+Site: mysite.localhost
+Form Dict: {'doctype': 'Client Script', 'name': 'Lead', 'cmd': 'frappe.desk.form.load.getdoc'}

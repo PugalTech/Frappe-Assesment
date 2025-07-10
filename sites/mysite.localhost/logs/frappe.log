@@ -885,3 +885,6 @@ Form Dict: {'doctype': 'Client Script', 'name': 'Lead', 'cmd': 'frappe.desk.form
 2025-06-26 05:16:07,794 ERROR frappe New Exception collected with id: 2025-06-26 05:16:07.366178-127.0.0.1-f0b
 Site: mysite.localhost
 Form Dict: {'doctype': 'Client Script', 'name': 'Lead', 'cmd': 'frappe.desk.form.load.getdoc'}
+2025-07-10 07:19:34,477 ERROR frappe New Exception collected with id: 2025-07-10 07:19:34.069909-127.0.0.1-4c3
+Site: mysite.localhost
+Form Dict: {'cmd': 'frappe.desk.desktop.get_desktop_page'}
